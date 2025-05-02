@@ -51,3 +51,23 @@ Made predictions and printed the first 10 predicted vs. true labels.
 
 Evaluated the model using accuracy, precision, recall, F1-score, and confusion matrix from Scikit-learn’s metrics module.
 
+Scikit-learn Comparison
+To benchmark and validate the custom implementation, I added two new code blocks that:
+
+Train Scikit-learn’s Random Forest:
+
+Used RandomForestClassifier from Scikit-learn with the same parameters (n_estimators=10, max_depth=10) for fair comparison.
+
+Trained on the same X_train and y_train data.
+
+Made predictions on the test set.
+
+Evaluate and Compare:
+
+Printed out the accuracy, confusion matrix, and classification report for both:
+
+Scikit-learn’s Random Forest
+
+Custom-built Random Forest
+
+This comparison helped verify that the custom model performs reasonably well when compared to Scikit-learn’s highly optimized version.
